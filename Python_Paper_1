@@ -1,4 +1,5 @@
 Python Assertions
 =================
 Python Assert statement is a Debugging aid that test a condition.If the assert condition is true,
-nothing happens and the code continues to execute normal.If the assert condition is false,an AssertionError exception is raised with an optional error message.
+nothing happens and the code continues to execute normal.If the assert condition is false,an AssertionError 
+exception is raised with an optional error message.
