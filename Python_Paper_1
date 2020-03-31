@@ -1,11 +1,11 @@
-Python Assertions
-=================
+ Assertions
+===========
 Python Assert statement is a Debugging aid that test a condition.If the assert condition is true,
 nothing happens and the code continues to execute normal.If the assert condition is false,an AssertionError 
 exception is raised with an optional error message.This statement simply takes input a boolean condition.
 
 Example
-=======
+-------
 In this example we have list of food temperatures.
 If the food temperatures is >= to 26 food temperature is O.K but if it is not AssertionError will be throne.
 
@@ -15,3 +15,12 @@ check_temp = 26
 for i in food_temp:
    assert i>=26,"Temperature is too low,Rejected"
    print(f'{i} is O.K')
+
+With Statement
+==============
+with statement is used in exception handling to make code cleaner and more readable.
+
+Example
+-------
+with open('text.txt','w') as f:
+	f.write('Hello World !')
