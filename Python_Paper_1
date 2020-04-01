@@ -9,10 +9,10 @@ Example
 In this example we have list of food temperatures.
 If the food temperatures is >= to 26 food temperature is O.K but if it is not AssertionError will be throne.
 
-food_temp = [40,26,39,30,25,21]
-check_temp = 26
+>>food_temp = [40,26,39,30,25,21]
+>>check_temp = 26
 
-for i in food_temp:
+>>for i in food_temp:
    assert i>=26,"Temperature is too low,Rejected"
    print(f'{i} is O.K')
 
@@ -22,5 +22,36 @@ with statement is used in exception handling to make code cleaner and more reada
 
 Example
 -------
-with open('text.txt','w') as f:
+>>with open('text.txt','w') as f:
 	f.write('Hello World !')
+
+Single Underscore
+=================
+Single underscore are a Python naming convention that indicates a name is meant for internal use.
+
+Example:1
+---------
+>>class Test():
+	def __init__(self):
+		self.foo = 11
+		self._bar = 23
+
+>>t = Test()
+>>t.foo
+>>t._bar
+
+Example:2
+---------
+Create a file named module.py
+
+def external_func():
+	return 23
+
+def _internal_func():
+	return 42
+
+Now import the module
+
+>>import a
+>> external_func()
+>>_internal_func()
